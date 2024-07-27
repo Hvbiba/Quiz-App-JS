@@ -1,0 +1,117 @@
+:root{
+    --background-color:#1b1c1d;
+    --btn-color:#2185d0;
+    --btnColor:#00827C;
+    --main-color:black;
+    --white: #eee;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    text-align: center; background-color: var(--background-color); color:var(--white)
+}
+header h1 {
+    padding: 10px 20px;
+}
+#container{
+    display: flex; justify-content: center; 
+    border: 1px #6c757d solid;
+    width: 70%; margin: auto; padding:40px 30px; margin-top: 4%;
+}
+#img-container{
+    width: 250px;
+}
+#img-container img {
+    padding: 0px; width: 100%; 
+}
+#test-inputs {
+    margin: 30px 0px;
+}
+#test-inputs .btn-group{
+display: block; margin: 20px 0px;
+
+}
+#test-inputs .btn-group .btn {
+    width: 100%; height: 50px;
+    text-align: start; background-color:var(--white); border: none;
+}
+#start-btn{
+    margin: 0px; width: 30%; height: 45px; 
+    text-align: start; font-weight: 500; font-size: 18px;
+}
+#full-quiz ,#quiz-form{
+    display: flex; flex-direction: column;
+}
+#quiz-form label{
+   font-size: 20px;
+}
+#display-Q{
+    margin: 20px 0px;
+}
+#question{
+    background-color: #eee; padding: 15px 5px;
+}
+.header{
+    display: flex; justify-content: space-between;
+    padding: 7px 40px;
+}
+.result{
+    text-align: center;
+    width: 40%;  margin: auto; margin-top: 10%; padding: 30px 30px;
+    border: black 2px solid;
+}
+.container h4 {
+    font-weight: 600 ;
+}
+@media (max-width: 767px){
+    #container{
+        flex-direction: column;
+        width: 90%; padding:30px 10px; margin: 14% 0px 0px 20px;
+    }
+    #img-container{
+        width: 120px; margin: 0px 0px 30px 28%;
+    }
+    #img-container img {
+        padding: 0px; width: 100%; margin: auto;
+    }
+    #test-inputs .btn-group .btn {
+        width: 100%; height: 50px;
+    }
+    #test-inputs {
+        margin: 0px 0px;
+    }
+    #start-btn{
+        width: 60%; height: 45px; 
+    }
+    .header{
+        display: flex; justify-content: space-between;
+        padding: 10px 5px;
+    }
+    .result{
+        width: 90%;  margin: auto; margin-top: 40%; padding: 30px 30px;
+    }
+}
+/*responsive for tablets*/
+@media (min-width: 768px) and (max-width: 1024px){
+    #container{
+        flex-direction: column;
+        width: 95%; padding:40px 20px; margin: 18% 0px 0px 40px;
+    }
+    #img-container{
+        width: 300px; margin: 0px 0px 50px 28%;
+    }
+    #img-container img {
+        padding: 0px; width: 100%; margin: auto;
+    }
+    #test-inputs .btn-group .btn {
+        width: 100%; height: 50px;
+    }
+    #test-inputs {
+        margin: 0px 0px;
+    }
+    #start-btn{
+        width: 40%; height: 50px; 
+    }
+}
+
